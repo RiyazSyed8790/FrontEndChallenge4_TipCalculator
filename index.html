@@ -16,37 +16,63 @@
 </head>
 <body>
  <main class="container">
-   <header>SPLI</header>
-   <header>TTER</header>
-   <main class="tip-section">
+   <div class="title">
+    <header>SPLI</header>
+    <header>TTER</header> 
+   </div>
+      <main class="tip-section">
    <div class="input-section">
      <div class="input-content">
     <h3>Bill</h3>
     <div class="bill-input">
     <img src="./images/icon-dollar.svg"/>
-    <input type="text" placeholder="0"/>
+    <input id="bill" type="text" placeholder="0"/>
     </div>
     <h3>Select Tip %</h3>
     <div class="percentage-section">
       <div class="buttons">
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>25%</button>
-      <button>50%</button>
-      <input type="text" placeholder="Custom"/>
+      <button id="5perc" onclick="divide(value)" value="5">5%</button>
+      <button id="10perc" onclick="divide(value)" value="10">10%</button>
+      <button id="15perc" onclick="divide(value)" value="15">15%</button>
+      <button id="25perc" onclick="divide(value)" value="25">25%</button>
+      <button id="50perc" onclick="divide(value)" value="50">50%</button>
+      <input id="custom-percentage" type="text" placeholder="Custom"/>
     </div>
     </div>
     <h3>Number of People        <span id="spam" style="visibility:hidden;color: red; ">Can't be zero</span></h3><label></label>
     <div onmouseover="warning()" onmouseout="warning2()" class="bill-input">
       <img src="./images/icon-person.svg" />
-      <input type="text" placeholder="0" />
+      <input id="people" type="text" placeholder="0" />
     </div>
   </div>
      </div>
    <div class="output-section">
-    <h1>Outputs here</h1>
+    <div class="container">
+    <div class="tip-amount">
+    <div class="per-person">
+      <h3>Tip Amount</h3>
+      <p>/ person</p>
+    </div>
+    <div class="total">
+      $<span id="per-person">0.00</span>
+    </div> 
    </div>
+   <div class="tip-amount">
+    <div class="per-person">
+      <h3>Total</h3>
+      <p>/ person</p>
+    </div>
+    <div class="total">
+      $<span id="total">0.00</span>
+    </div> 
+   </div>
+   <div class="intiators">
+    <button class="result" onclick="print()" >GET</button>
+    <button id="reset" onclick="erase()" class="reset inactive" >RESET</button>
+   </div>
+   
+  </div>  
+  </div>
    </main>
  </main> 
   <!--<div class="attribution">

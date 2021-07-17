@@ -5,16 +5,22 @@ body{
     align-items: center;
     height: 99vh;
     font-family: 'Space Mono', monospace;
-    background-color: hsl(185, 41%, 84%);
-   
+    background-color: hsl(185, 41%, 84%);   
 }
-.container header{
+.container .title{
+    margin: 3rem 0;
+    font-size: 1.5rem;
+}
+
+.container .title header{
     text-align: center;
-    
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
     
 }
 .input-section{
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     width: 25rem;
     background-color: hsl(0, 0%, 100%);
 }
@@ -24,7 +30,13 @@ body{
 .tip-section{
     display: flex;
     justify-content: center;
+    background-color:white;
     align-items: center;
+    min-height: 22.5rem;
+    height: 28rem;
+    min-width: 45rem;
+    width: 55rem;
+    border-radius: 25px;
 }
 .bill-input{
     display: flex;
@@ -104,3 +116,66 @@ input[type="text"]:hover{
     border: hsl(172, 67%, 45%) 3px solid;
 
 }
+/*Output styling here*/
+.output-section{
+    width: 25rem;
+    /*border: black 2px solid;*/
+    background-color: hsl(183, 100%, 15%);
+    min-height: 23.5rem;
+    border-radius: 25px;
+    }
+ .container{
+     margin: 1rem 1rem;
+      }
+.tip-amount{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(189, 41%, 97%);
+}
+.total{
+    color: hsl(172, 67%, 45%);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.6rem;
+}
+.total img{
+    margin: 1rem 0;
+    color:hsl(172, 67%, 45%);
+}
+.tip-amount p{
+    opacity:0.6;
+}
+.total span{
+    font-size: 2rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+.intiators{
+ margin-top: 4rem;
+}
+
+.result , .reset{
+    font-family: 'Space Mono', monospace;
+    margin: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+    color: hsl(183, 100%, 15%);
+    border: 2px solid hsl(172, 67%, 45%);
+    background-color: hsl(172, 67%, 45%);
+    font-size: 1rem;
+    height: 1.75rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.result:hover , .result:hover{
+    cursor: pointer;
+    background-color: hsl(185, 41%, 84%);
+    border: 2px solid hsl(185, 41%, 84%);
+}
+
+.inactive{
+    opacity: 0.4 ;
+    cursor: unset;
+}
+
