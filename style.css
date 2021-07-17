@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+   
+}
+.container header{
+    text-align: center;
+    
+    
+}
+.input-section{
+    border: 2px solid black;
+    width: 25rem;
+    background-color: hsl(0, 0%, 100%);
+}
+.input-content{
+    margin: 1rem 0rem;
+}
+.tip-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bill-input{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 1rem;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+}
+.bill-input:hover{
+    border: hsl(172, 67%, 45%) 3.5px solid;
+    cursor: pointer;
+}
+.tip-section input[type="text"]{
+    text-align: right;
+    border: hsl(189, 41%, 97%) 2px solid;
+    font-size: 1.25rem;
+    width: 15rem;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.25rem;
+    color: hsl(183, 100%, 15%);
+    font-weight:700;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(189, 41%, 97%);
+}
+input[type="text"]:hover{
+    cursor: pointer;
+}
+.tip-sectioninput[type="text"]::shadow{
+    border: hsl(189, 41%, 97%) 2px solid;
+}
+.tip-section .bill-input img{
+    height: 1.25rem;
+    margin: 0.25rem 0.25rem;
+}
+.tip-section .bill-input{
+    border: hsl(189, 41%, 97%)olid black;
+    
+}
+.input-section h3{
+    margin-left: 1rem;
+    color:hsl(186, 14%, 43%)
+}
+.percentage-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons{
+    margin: 0 1rem;
+}
+.percentage-section button{
+    width: 6.25rem;
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    margin: 0.5rem 0.125rem ;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    color: hsl(189, 41%, 97%);
+    background-color:hsl(183, 100%, 15%);
+    border: hsl(183, 100%, 15%) 2px solid;
+    border-radius: 5px;
+}
+.percentage-section button:hover{
+    background-color: hsl(185, 41%, 84%);
+    border: hsl(185, 41%, 84%) 3px solid;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+.percentage-section input[type="text"]{
+    text-align: right;
+    width: 4.5rem;
+    font-size: 1.25rem;
+    margin: 0.5rem 0.75rem;
+    font-family: monospace;
+}
+.percentage-section input[type="text"]:hover{
+    border: hsl(172, 67%, 45%) 3px solid;
+
+}
