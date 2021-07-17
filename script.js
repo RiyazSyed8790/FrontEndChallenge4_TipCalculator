@@ -1,10 +1,12 @@
 'use strict';
 // var bill = document.getElementById("bill").value;
 function warning(){
+    /*document.getElementById("spam").style.display="initial";*/
     document.getElementById("spam").style.visibility="visible";
 }
 function warning2(){
-    document.getElementById("spam").style.visibility="hidden";
+    /*document.getElementById("spam").style.display="initial";*/
+     document.getElementById("spam").style.visibility="hidden";
 }
 //Real work here:
 function print(){

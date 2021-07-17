@@ -2,17 +2,20 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 99vh;
     font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);   
 }
-.container .title{
+/*.container1{
+    display: flex;
+    justify-content: center;
+}*/
+.container1 .title{
     margin: 3rem 0;
+    
     font-size: 1.5rem;
 }
 
-.container .title header{
+.container1 .title header{
     text-align: center;
     letter-spacing: 0.5rem;
     font-weight: 700;
@@ -65,7 +68,7 @@ body{
 input[type="text"]:hover{
     cursor: pointer;
 }
-.tip-sectioninput[type="text"]::shadow{
+.tip-section input[type="text"]::shadow{
     border: hsl(189, 41%, 97%) 2px solid;
 }
 .tip-section .bill-input img{
@@ -168,7 +171,12 @@ input[type="text"]:hover{
     font-weight: 700;
     border-radius: 10px;
 }
-.result:hover , .result:hover{
+.result:hover {
+    cursor: pointer;
+    background-color: hsl(185, 41%, 84%);
+    border: 2px solid hsl(185, 41%, 84%);
+}
+.result:hover{
     cursor: pointer;
     background-color: hsl(185, 41%, 84%);
     border: 2px solid hsl(185, 41%, 84%);
@@ -178,4 +186,64 @@ input[type="text"]:hover{
     opacity: 0.4 ;
     cursor: unset;
 }
-
+/*Responsive styling start*/
+@media(max-width:380px){
+    html, body {
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    body{
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    
+    .tip-section{
+        display: block;
+        float: none;
+        background-color:hsl(185, 41%, 84%);
+        min-height:none;
+        height:auto;
+        min-width: none;
+        width: 10%;
+        border-radius: 25px;
+    
+    }
+    .input-section , .output-section{
+        display: block;
+        float: none;
+        width: 50%;
+        min-width: none;
+        min-height: none;
+        height: auto;
+        
+    }
+    .input-section{
+        border-radius: 25px;
+        border:2px solid hsl(0, 0%, 100%);
+    }
+    .input-content{
+        margin: 0.5rem 0.5rem;
+        border:2px solid hsl(0, 0%, 100%);
+    }
+    
+    .tip-sectioninput[type="text"]{
+        width: 100%;
+    }
+    .percentage-section button {
+        width: 9rem;
+    }
+    .percentage-section input[type="text"]{
+        text-align: right;
+        width: 7.0125rem;
+        font-size: 1.25rem;
+        margin: 0.5rem 0.75rem;
+        font-family: monospace;
+    }
+}
