@@ -186,8 +186,12 @@ input[type="text"]:hover{
     opacity: 0.4 ;
     cursor: unset;
 }
+.attribution{
+    text-align: center;
+    margin: 1rem 0;
+}
 /*Responsive styling start*/
-@media(max-width:380px){
+@media(max-width:450px){
     html, body {
         position:fixed;
         top:0;
