@@ -253,3 +253,9 @@ input[type="text"]:hover{
         font-family: monospace;
     }
 }
+@media(max-width:375px){
+    .container1{
+        margin-left: -0.3rem;
+    }
+    
+}
