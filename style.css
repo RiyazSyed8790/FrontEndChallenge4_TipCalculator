@@ -201,7 +201,9 @@ input[type="text"]:hover{
         overflow-y: scroll;
         overflow-x: hidden;
     }
-    
+    .container1{
+        margin-left: -0.125rem;
+    }
     body{
         display: block;
         float: none;
