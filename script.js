@@ -14,7 +14,15 @@ function print(){
     console.log(document.getElementById("bill").value);*/
     var custom = Number( document.getElementById("custom-percentage").value);
     divide(custom);
-    document.getElementById("reset").classList.remove("inactive");  
+    document.getElementById("reset").classList.remove("inactive");
+    if((document.getElementById("bill").value = "0") || (document.getElementById("people").value = "0")){
+        document.getElementById("total").innerText = "0.00";
+       document.getElementById("per-person").innerText = "0.00";
+       console.log("cope");
+       document.getElementById("bill").value = null ;
+       document.getElementById("people").value = null ;
+       document.getElementById("reset").classList.add("inactive");
+        }
 }
 function divide(value) {
    var bill = Number(document.getElementById("bill").value);
@@ -27,9 +35,11 @@ function divide(value) {
    document.getElementById("reset").classList.remove("inactive");  
 }
 function erase(){
-  document.getElementById("bill").value="0";
-  
-  document.getElementById("people").value="0";
+  document.getElementById("bill").value=null;
+  document.getElementById("people").value=null;
   document.getElementById("total").innerText = " 0.00";
-   document.getElementById("per-person").innerText = "0.00";  
+   document.getElementById("per-person").innerText = "0.00";
+   if(document.getElementById("custom-percentage").value != null){
+    document.getElementById("custom-percentage").value= null;   
+  }  
 }
