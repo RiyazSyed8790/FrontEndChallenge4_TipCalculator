@@ -14,7 +14,7 @@ function print(){
     console.log(document.getElementById("bill").value);*/
     var custom = Number( document.getElementById("custom-percentage").value);
     divide(custom);
-    document.getElementById("reset").classList.remove("inactive");
+    document.getElementById("reset").classList.remove("inactive");  
 }
 function divide(value) {
    var bill = Number(document.getElementById("bill").value);

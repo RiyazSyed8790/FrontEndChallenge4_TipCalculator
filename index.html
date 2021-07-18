@@ -21,12 +21,13 @@
     <header>TTER</header> 
    </div>
       <main class="tip-section">
+        
    <div class="input-section">
      <div class="input-content">
     <h3>Bill</h3>
     <div class="bill-input">
     <img src="./images/icon-dollar.svg"/>
-    <input id="bill" type="text" placeholder="0"/>
+    <input id="bill" type="text" placeholder="0" required />
     </div>
     <h3>Select Tip %</h3>
     <div class="percentage-section">
@@ -42,10 +43,11 @@
     <h3>Number of People        <span id="spam" style="visibility:hidden;color: red; ">Can't be zero</span></h3><label></label>
     <div onmouseover="warning()" onmouseout="warning2()" class="bill-input">
       <img src="./images/icon-person.svg" />
-      <input id="people" type="text" placeholder="0" />
+      <input id="people" type="text" placeholder="0" required />
     </div>
   </div>
      </div>
+    
    <div class="output-section">
     <div class="container">
     <div class="tip-amount">
