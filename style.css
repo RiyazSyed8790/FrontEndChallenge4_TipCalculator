@@ -184,7 +184,11 @@ input[type="text"]:hover{
 
 .inactive{
     opacity: 0.4 ;
-    cursor: unset;
+    cursor: not-allowed;
+    
+}
+.inactive:hover{
+    cursor: not-allowed;
 }
 .attribution{
     text-align: center;
